@@ -1,0 +1,180 @@
+/*
+Description: Contains the styling for Site
+Author: Talawou Pene Aymar
+Email: aymar.talawoupene@student.curtin.edu
+StudentID: 19910075
+Tags: Website, Tables, Colour Palette, Grid Containers
+*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-secondary);
+}
+
+hr{
+  height:2px;
+  border-width:0;
+  color:black;
+  background-color:black;
+  width:100%;
+  text-align:left;
+  margin-left:0;
+  margin-top: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/*style for last table rows */
+.Lasttr{
+    height: 4em;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style the content */
+.content1 {
+  background: var(--color-secondary);
+  padding: 10px;
+  height: 200px;
+  text-align: center;
+}
+
+.content1 h1 {
+  color: var(--font-color);
+}
+
+.content1 h2 {
+  color: var(--font-color);
+}
+
+.content1 h3 {
+  color: var(--font-color);
+}
+
+.content1 b {
+  color: var(--font-color);
+}
+
+.content2 {
+  background: var(--color-secondary);
+  padding: 10px;
+  height: auto;
+  text-align: right;
+}
+
+.content2 b {
+  color: var(--font-color);
+}
+
+.content3 {
+  background: var(--color-secondary);
+  padding: 10px;
+  height: auto;
+  text-align: left;
+}
+
+.content3 b {
+  color: var(--font-color);
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Style the footer */
+.footer {
+  padding: 10px;
+  width: 100%;
+}
+
+/*Style for curtin top right image*/
+.CurtinImg{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo-image{
+  width: 200px;
+  object-fit: contain;
+}
+
+.topnav-right {
+  float: right;
+}
+
+/*Style for grid containers*/
+.content2 { grid-area: left; }
+
+.content3 { grid-area: right; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left right right right right right'
+    'left right right right right right'
+    'left right right right right right'
+    'left right right right right right'
+    'left right right right right right'
+    'left right right right right right'
+    'left right right right right right'
+    'left right right right right right'
+    'left right right right right right';
+  gap: 10px;
+  padding: 10px;
+}
+
+.theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+  }
+  .theme-dark {
+    --color-primary: #17ed90;
+    --color-secondary: #243133;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+  }
+
+  .container h1 {
+    color: var(--font-color);
+  }
+
+  .container h2 {
+    color: var(--font-color);
+  }
+
+  .container h3 {
+    color: var(--font-color);
+  }
+
+  .container button {
+    color: var(--font-color);
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+  }
